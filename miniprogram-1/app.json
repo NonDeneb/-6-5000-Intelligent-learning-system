@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/myself/myself",
+    "pages/camera/camera",
+    "pages/result/result",
+    "pages/mydata/mydata",
+    "pages/setting/setting"
+  ],
+  "tabBar": {
+    "selectedColor": "#1296db",
+    "borderStyle": "white",
+    "color": "#bfbfbf",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "上传题目",
+      "iconPath": "images/saomiao.png",
+      "selectedIconPath": "images/saomiao_selected.png"
+    }, {
+      "pagePath": "pages/myself/myself",
+      "text": "我的",
+      "iconPath": "images/geren.png",
+      "selectedIconPath": "images/geren_selected.png"
+    }]
+  },
+  "window": {
+    "navigationStyle": "custom"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

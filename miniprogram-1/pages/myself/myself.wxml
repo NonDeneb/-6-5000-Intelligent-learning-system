@@ -1,0 +1,17 @@
+<!--pages/myself/myself.wxml-->
+<view class="container">
+  <view class="icon">
+    <image src="/images/icon.png"></image>
+    <text>杨小贤</text>
+  </view>
+  <view class="function-list">
+    <view class="function-item" bindtap="toMyData">
+      <text>我的数据</text>
+      <image src="/images/right.png"></image>
+    </view>
+    <view class="function-item" bindtap="toSetting">
+        <text>设置</text>
+        <image src="/images/right.png"></image>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,76 @@
+/* pages/mydata/mydata.wxss */
+.container {
+    display: flex;
+    background-color: #F6F6F6;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .navigation-container {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    background-color: #FDB547;
+  }
+  .navigation-bar {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .navigation-buttons {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-color: transparent;
+  }
+  .nav-img{
+    height: 16px;
+    width: 16px;
+  }
+  
+  .navigation-title {
+    position: absolute;
+    left: 104px;
+    right: 104px;
+    text-align: center;
+    font-size: 16px;
+    color: #FFFFFF;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .box-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 45%;
+    height: 300rpx;
+    margin-bottom: 20px;
+    border-radius: 10%;
+    box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+  }
+
+  .box-item text:nth-child(1) {
+      display: block;
+      font-size: 70rpx;
+      color: #fff;
+  }
+
+  .box-item text:nth-child(2) {
+    display: block;
+    margin-bottom: 30rpx;
+    font-size: 60rpx;
+    color: #fff;
+  }
+
+  .g1 {
+    width: 100%;
+    height: 400px;
+  }

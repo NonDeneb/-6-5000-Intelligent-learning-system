@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="border2" bindtap="openScan">
+    <view class="border1">
+      <view class="search">
+        <image src="/images/paizhao.png" style="width: 250rpx; height: 250rpx;"></image>
+      </view>
+    </view>
+  </view>
+  <view class="selection">
+    <picker bindchange="changePaper" value="{{homeworkIndex}}" range="{{homeworkData}}" range-key="homeworkName" style="margin-top: 20rpx;">
+      <view class="picker">
+        <text class="picker-title">当前作业：</text>
+        <text class="picker-content">{{homeworkData[homeworkIndex].homeworkName}}</text>
+      </view>
+    </picker>
+    <picker bindchange="changeClass" value="{{classIndex}}" range="{{classData}}" range-key="name">
+      <view class="picker">
+        <text class="picker-title">当前班级：</text>
+        <text class="picker-content">{{classData[classIndex].name}}</text>
+      </view>
+    </picker>
+    <picker bindchange="changeStudent" value="{{studentIndex}}" range="{{studentData}}" range-key="studentName" style="margin-bottom: 20rpx;">
+      <view class="picker">
+        <text class="picker-title">当前学生：</text>
+        <text class="picker-content">{{studentData[studentIndex].studentName}}</text>
+      </view>
+    </picker>
+  </view>
+</view>

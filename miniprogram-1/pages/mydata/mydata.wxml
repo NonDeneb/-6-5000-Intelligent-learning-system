@@ -1,0 +1,36 @@
+<!--pages/mydata/mydata.wxml-->
+<view class="container">
+    <view class="navigation-container" style="{{'height: ' + navigationBarAndStatusBarHeight + 'px'}}">
+        <!--空白来占位状态栏-->
+        <view style="{{'height: ' + statusBarHeight}}"></view>
+        <!--自定义导航栏-->
+        <view class="navigation-bar" style="{{'height:' + navigationBarHeight}}">
+            <view class="navigation-buttons" style="{{'height:' + menuButtonHeight}}">
+                <image class="nav-img" src='/images/return.png' bindtap="returnBack"></image>
+            </view>
+            <view class="navigation-title" style="{{'line-height:' + navigationBarHeight}}">{{title}}</view>
+        </view>    
+    </view>
+    <view class="box-item" style="{{' background-color: rgb(19, 208, 178);  margin-top: ' + (navigationBarAndStatusBarHeight + 20) + 'px;'}}" >
+        <text>班级数</text>
+        <text>2</text>
+    </view>
+    <view class="box-item" style="{{'background-color: rgb(63, 158, 217);  margin-top: ' + (navigationBarAndStatusBarHeight + 20) + 'px;'}}" >
+        <text>学生数</text>
+        <text>42</text>
+    </view>
+    <view class="box-item" style="{{' background-color: rgb(63, 158, 217);'}}" >
+        <text>试题数</text>
+        <text>6</text>
+    </view>
+    <view class="box-item" style="{{'background-color: rgb(19, 208, 178);'}}" >
+        <text>优秀率</text>
+        <text>80%</text>
+    </view>
+    <view class="g1">
+        <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas>
+    </view>
+    <view class="g1">
+        <ec-canvas id="mychart-dom-line1" canvas-id="mychart-line1" ec="{{ ec1 }}"></ec-canvas>
+    </view>
+</view>

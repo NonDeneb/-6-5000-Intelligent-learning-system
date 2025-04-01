@@ -1,0 +1,64 @@
+/**index.wxss**/
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FDB547;
+  height: 100%;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400rpx;
+  height: 400rpx;
+  padding: 0;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.border1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:450rpx;
+  height: 450rpx;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,.6);
+}
+
+.border2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:500rpx;
+  height: 500rpx;
+  margin-top: 150rpx;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,.3);
+}
+
+.selection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 40%;
+  width: 100%;
+  background-color: #fff;
+  border-top-left-radius: 15%;
+  border-top-right-radius: 15%;
+}
+
+.picker-title {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.picker-content {
+  font-size: 20px;
+  font-weight: 500;
+}

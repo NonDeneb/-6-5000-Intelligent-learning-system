@@ -1,0 +1,53 @@
+/* pages/myself/myself.wxss */
+
+.container {
+    background-color: #FDB547;
+    height: 100%;
+}
+  
+.icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    width: 100%;
+}
+
+.icon image {
+    width: 80px;
+    height: 80px;
+}
+
+.icon text {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.function-list {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 100%;
+    background-color: #fff;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.function-item {
+    display: flex;
+    padding: 5% 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.function-item:nth-child(1) {
+    margin-top: 5%;
+}
+
+.function-item image {
+    height: 25px;
+    width: 25px;
+}
